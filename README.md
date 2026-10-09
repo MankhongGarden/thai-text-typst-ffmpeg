@@ -6,7 +6,7 @@ Two problems that make Thai output look wrong to a Thai reader, with a fix for e
 
 | Problem | Symptom | Fix |
 |---|---|---|
-| Typst line breaks | Breaks inside words: `โรง|พยาบาล`, `ทุก|คน`, `จัง|หวัด`, `กำลัง|กาย` | Pre-segment with a dictionary segmenter, insert ZWSP between words, wrap each word in `box()` with one show rule |
+| Typst line breaks | Breaks inside words: `โรง\|พยาบาล`, `ทุก\|คน`, `จัง\|หวัด`, `กำลัง\|กาย` | Pre-segment with a dictionary segmenter, insert ZWSP between words, wrap each word in `box()` with one show rule |
 | ffmpeg burned-in subtitles | Tone marks above upper vowels disappear: `ที่นี่` → `ทีนี` | Use the `ass=` filter, not `subtitles=` |
 
 ---
